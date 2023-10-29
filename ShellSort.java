@@ -16,7 +16,7 @@ public class ShellSort {
                 long tempoInicio = System.nanoTime();
                 long trocas = shell(array, size);
                 long tempoFim = System.nanoTime();
-                long duracao = (tempoFim - tempoInicio) / 1000000; // Tempo em milissegundos
+                long duracao = (tempoFim - tempoInicio);
 
                 totalTempoExecucao += duracao;
                 totalTrocas += trocas;
