@@ -46,7 +46,7 @@ public class MergeSort {
         int trocas = 0;
         int tamanhoAtual;
 
-        for (tamanhoAtual = 1; tamanhoAtual < tamanho; tamanhoAtual *= 2) {
+        for (tamanhoAtual = tamanho / 2; tamanhoAtual > 0; tamanhoAtual /= 2) {
             for (int esquerda = 0; esquerda < tamanho - 1; esquerda += 2 * tamanhoAtual) {
                 int meio = esquerda + tamanhoAtual - 1;
                 int direita = esquerda + 2 * tamanhoAtual - 1;
